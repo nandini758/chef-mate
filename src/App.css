@@ -1,0 +1,108 @@
+.main{
+  margin: 0px;
+  padding: 0px;
+}
+
+.Nav{
+  background-color:blue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 17%;
+}
+
+
+.searchbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.searchbox input{
+  width: 25rem;
+  height: 30px;
+  border-radius:5px;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+.right div{
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.right div:hover{
+  background-color: rgb(3, 3, 49);
+}
+.slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  margin-left: 3rem;
+  perspective: 1000px;
+}
+.slider img{
+  border-radius: 5%;
+  border: 2px solid rgb(51, 51, 124);
+  transition: transform 0.3s ease;
+  
+}
+.slider img:hover{
+  transform: translateZ(50px);
+  border: 2px solid yellow;
+}
+.slider2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 98%;
+  perspective: 800px;
+}
+.slider2 img{
+  border-radius: 5%;
+  border: 2px solid rgb(51, 51, 124);
+  transition: transform 0.3s ease;
+  
+}
+.slider2 img:hover{
+  transform: translateZ(100px);
+  border: 2px solid yellow;
+}
+.btn{
+  padding:1rem ;
+  margin: 1rem;
+  font-style: bold;
+  background-color:yellow ;
+  border-radius: 5%;
+  border: 2px solid blue;
+}
+.btn:hover{
+background-color: yellow;
+border: 2px solid blue;
+color: black;
+}
+.img{
+  
+  perspective: 1000px;
+}
+.img img{
+  margin: 9px;
+  border-radius: 5%;
+  border: 2px solid rgb(51, 51, 124);
+  transition: transform 0.3s ease;
+}
+.img img:hover{
+  transform: translateZ(100px);
+  border: 2px solid yellow;
+}
+.Link{
+  text-decoration: none;
+  color: white;
+}
