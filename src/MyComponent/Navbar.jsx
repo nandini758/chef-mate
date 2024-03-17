@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="Nav">
     <div className="left">
       <Link to='/' className='Link' >
-    <img id='chef-logo' src='https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,h=630,fit=crop,f=jpeg/YNqZjGOXwwckj3Vw/cm_0001_21_logo_v6-01-mk32j9X9aJHxw53x.jpg'/>
+    <img id='chef-logo' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZAbMz8QA9Hh925XJn6hynUQeVbA8YKPOEiwHkWsAjpw&s'/>
     </Link>
     </div>
     <div className='searchbox' >
