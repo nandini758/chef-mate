@@ -13,14 +13,17 @@ const Navbar = () => {
     <div className="Nav">
     <div className="left">
       <Link to='/' className='Link' >
-    <h1>Chef-Mate</h1>
+    <img id='chef-logo' src='https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1200,h=630,fit=crop,f=jpeg/YNqZjGOXwwckj3Vw/cm_0001_21_logo_v6-01-mk32j9X9aJHxw53x.jpg'/>
     </Link>
     </div>
-    <div className='searchbox'>
+    <div className='searchbox' >
       <form onSubmit={handleSubmit}>
-      <input
+           <input
       onChange={(e)=>setInput(e.target.value)}
-      type="text" />
+      type="text" placeholder='🔍 Search the recipe items'
+      
+      />
+
       </form>
       </div>
     <div className="right">
