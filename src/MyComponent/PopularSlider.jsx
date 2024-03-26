@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const PopularSlider = () => {
   const [data, setData] = useState([])
@@ -48,6 +49,7 @@ const PopularSlider = () => {
       }
         </Slider>
      </div>
+     
     </>
   )
 }
