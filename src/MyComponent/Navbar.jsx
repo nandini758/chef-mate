@@ -12,7 +12,7 @@ const Navbar = () => {
     <>
     <div className="Nav">
     <div className="left">
-      <Link to='/Home' className='Link' >
+      <Link to='/' className='Link' >
     <img id='chef-logo' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZAbMz8QA9Hh925XJn6hynUQeVbA8YKPOEiwHkWsAjpw&s'/>
     </Link>
     </div>

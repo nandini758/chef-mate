@@ -13,9 +13,9 @@ const App = () => {
   return (
    <> 
    <Routes>
-    <Route path='/' Component={MainHome}/>
-    <Route path='/SignUp' Component={SignUp}/>
-    <Route path='/Home' Component={Home}/>
+    {/* <Route path='/' Component={MainHome}/> */}
+    {/* <Route path='/SignUp' Component={SignUp}/> */}
+    <Route path='/' Component={Home}/>
     <Route path='/:idMeal' Component={RecipeId}/>
     <Route path='/Categary/:name' Component={Categary}/>
     <Route path='/Search/:SearchTerm' Component={SearchElement}/>
