@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import {getFirestore} from "firebase/firestore"
+
 const firebaseConfig = {
   apiKey: "AIzaSyAoSTuOib8RIOYfhZZbR1QRHNT4rE0A2xI",
   authDomain: "chef-mate-a829d.firebaseapp.com",
@@ -16,5 +17,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
 export const auth= getAuth(app);
 export const db=getFirestore(app);
