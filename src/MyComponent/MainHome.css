@@ -1,51 +1,73 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.main-continer{
+  margin: 0;
+  padding: 0;
+  
+}
+.inner-container{
+  height: 125vh;
+  width: 100%;
+ 
+  background-image: url('/public/photo-chefMate.jpg');
+ 
 
-.container{
-   margin: 0;
-   padding: 0;
-   position: relative;
 }
-.container img{
-    height: 50em;
-    width: 78.9em;
+.inner-container .img{
+  height: 100vh;
+  width: 100%;
 }
-.container .btn1{
-    position: absolute;
-    left:66.8em;
-    margin-top:2px ;
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 30px;
-    text-align: center;
-    
-  }
-  
-  .container .btn1:hover {
-    background-color: rgb(242, 236, 236);
-    color: black;
-  }
-  .container .btn2{
-    position: absolute;
-    margin-top:2px ;
-    left:73em;
-    background-color: rgb(38, 33, 33);
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 30px;
-    text-align: center;
-  }
-  
-  .container .btn2:hover {
-    background-color: rgb(242, 236, 236);
-    color: black;
-  }
-  .container #chef-logo{
-    position: absolute;
-    left:0px;
-  }
+.btn1 {
+  position: absolute;
+  right: 8%; /* Adjust as needed */
+  top: 20px; /* Adjust as needed */
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.btn1:hover {
+  background-color: rgb(242, 236, 236);
+  color: black;
+}
+.btn2 {
+  position: absolute;
+  right: 1%; /* Adjust as needed */
+  top: 20px; /* Adjust as needed */
+  background-color: rgb(38, 33, 33);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.btn2:hover {
+  background-color: rgb(242, 236, 236);
+  color: black;
+}
+.image-container {
+  position: relative;
+  width: 100%; /* Fill the container horizontally */
+  height: 100%; /* Fill the container vertically */
+}
+.slider-overlay {
+  position: absolute;
+  bottom: -25%;
+  left: 0%;
+  width: 100%;
+  padding-left: 0px;
+}
+.footer {
+  position: absolute;
+  bottom: -35%;
+  left: 0;
+  width: 100%;
+  /* Set your desired text color */
+  padding: 0 0; /* Set your desired padding */
+}
