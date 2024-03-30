@@ -1,73 +1,44 @@
-body{
+.main-container{
   margin: 0;
   padding: 0;
-}
-.main-continer{
-  margin: 0;
-  padding: 0;
-  
 }
 .inner-container{
-  height: 125vh;
-  width: 100%;
- 
-  background-image: url('/public/photo-chefMate.jpg');
- 
-
-}
-.inner-container .img{
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100%;
+  background-image: url('/public/photo-chefMate.jpg');
 }
+
 .btn1 {
-  position: absolute;
-  right: 8%; /* Adjust as needed */
-  top: 20px; /* Adjust as needed */
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 30px;
-}
-.btn1:hover {
-  background-color: rgb(242, 236, 236);
-  color: black;
-}
-.btn2 {
-  position: absolute;
-  right: 1%; /* Adjust as needed */
-  top: 20px; /* Adjust as needed */
-  background-color: rgb(38, 33, 33);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 30px;
-}
-.btn2:hover {
-  background-color: rgb(242, 236, 236);
-  color: black;
-}
-.image-container {
-  position: relative;
-  width: 100%; /* Fill the container horizontally */
-  height: 100%; /* Fill the container vertically */
-}
-.slider-overlay {
-  position: absolute;
-  bottom: -25%;
-  left: 0%;
-  width: 100%;
-  padding-left: 0px;
-}
-.footer {
-  position: absolute;
-  bottom: -35%;
-  left: 0;
-  width: 100%;
-  /* Set your desired text color */
-  padding: 0 0; /* Set your desired padding */
-}
+    position: absolute;
+    right: 8%; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .btn1:hover {
+    background-color: rgb(242, 236, 236);
+    color: black;
+  }
+  .btn2 {
+    position: absolute;
+    right: 1%; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
+    background-color: rgb(38, 33, 33);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .btn2:hover {
+    background-color: rgb(242, 236, 236);
+    color: black;
+  }
