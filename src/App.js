@@ -12,19 +12,19 @@ import Login from './MyComponent/Login'
 
 const App = () => {
   return (
-   <> 
+   <div className='main'> 
    <Routes>
-    <Route path='/' Component={MainHome}/>
-    <Route path='/SignUp' Component={SignUp}/>
-    <Route path='/Login' Component={Login}/>
-    <Route path='/home' Component={Home}/>
+    {/* <Route path='/' Component={MainHome}/> */}
+    {/* <Route path='/SignUp' Component={SignUp}/> */}
+    {/* <Route path='/Login' Component={Login}/> */}
+    <Route path='/' Component={Home}/>
     <Route path='/:idMeal' Component={RecipeId}/>
     <Route path='/Categary/:name' Component={Categary}/>
     <Route path='/Search/:SearchTerm' Component={SearchElement}/>
     
    
    </Routes>
-    </>
+    </div>
   )
 }
 

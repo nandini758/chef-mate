@@ -1,6 +1,7 @@
 .main{
   margin: 0px;
   padding: 0px;
+  height: 100%;
 }
 
 .Nav{
@@ -11,6 +12,9 @@
   align-items: center;
   width: 100%;
   height: 17%;
+}
+.donoSlider{
+  height: 83%;
 }
 #chef-logo{
   height: 3em;

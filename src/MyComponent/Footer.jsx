@@ -5,7 +5,8 @@ import { faFacebook, faTwitter, faDribbble, faLinkedin } from '@fortawesome/free
 
 function Footer() {
   return (
-    <footer className="site-footer bg-dark">
+    <div className="conatners">
+    <footer className="site-footer bg-dark ">
       <hr />
       <div className="container">
         <div className="row">
@@ -26,6 +27,7 @@ function Footer() {
         </div>
       </div>
     </footer>
+    </div>
   );
 }
 

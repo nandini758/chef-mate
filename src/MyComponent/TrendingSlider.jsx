@@ -29,8 +29,10 @@ const TrendingSlider = () => {
   return (
     <>
     <div style={{
-      margin:"30px",width:"90%",
+      margin:"40px",width:"90%",
+      
       height:"50vh",
+      marginBottom:'0px',
       
       
 
@@ -41,7 +43,7 @@ const TrendingSlider = () => {
           <Link to={`/${d.idMeal}`} key={d.idMeal}>
           <div className='slider2'>
             <img src={d.strMealThumb
-          } alt='' style={{width:"10rem",height:"8rem"}}/>
+          } alt='' style={{width:"10rem",height:"13rem",}}/>
           </div>
           </Link>
         )
@@ -49,7 +51,9 @@ const TrendingSlider = () => {
       }
         </Slider>
      </div>
+     <div className="footer">
      <Footer/>
+     </div>
     </>
   )
 }
