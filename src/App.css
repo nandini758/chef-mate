@@ -1,10 +1,10 @@
-.main{
+.main {
   margin: 0px;
   padding: 0px;
 }
 
-.Nav{
-  background-color:rgb(90, 90, 186);
+.Nav {
+  background-color: rgb(90, 90, 186);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -12,39 +12,49 @@
   width: 100%;
   height: 17%;
 }
-#chef-logo{
+
+.donoSlider {
+  height: 83%;
+}
+
+#chef-logo {
   height: 3em;
   width: 3em;
   border-radius: 20%;
   margin-left: 3px;
 }
 
-.searchbox{
+.searchbox {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-.searchbox input{
+
+.searchbox input {
   width: 25rem;
   height: 30px;
-  border-radius:5px;
+  border-radius: 5px;
 }
-.right{
+
+.right {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 35%;
 }
-.right div{
+
+.right div {
   padding: 0.5rem;
   font-size: 1.2rem;
   font-weight: bold;
 }
-.right div:hover{
+
+.right div:hover {
   background-color: rgb(3, 3, 49);
 }
-.slider{
+
+.slider,
+.slider2,.slider3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,62 +62,94 @@
   margin-left: 3rem;
   perspective: 1000px;
 }
-.slider img{
+
+.slider img,
+.slider2 img,
+.slider3 img,
+.img img {
   border-radius: 5%;
   border: 2px solid rgb(51, 51, 124);
   transition: transform 0.3s ease;
-  
 }
-.slider img:hover{
+
+.slider img:hover,
+.slider2 img:hover,
+.slider3 img:hover,
+.img img:hover {
   transform: translateZ(50px);
   border: 2px solid yellow;
 }
-.slider2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  width: 98%;
-  perspective: 800px;
-}
-.slider2 img{
-  border-radius: 5%;
-  border: 2px solid rgb(51, 51, 124);
-  transition: transform 0.3s ease;
-  
-}
-.slider2 img:hover{
-  transform: translateZ(100px);
-  border: 2px solid yellow;
-}
-.btn{
-  padding:1rem ;
+
+.btn {
+  padding: 1rem;
   margin: 1rem;
   font-style: bold;
-  background-color:yellow ;
+  background-color: yellow;
   border-radius: 5%;
   border: 2px solid blue;
 }
-.btn:hover{
-background-color: yellow;
-border: 2px solid blue;
-color: black;
+
+.btn:hover {
+  background-color: yellow;
+  border: 2px solid blue;
+  color: black;
 }
-.img{
-  
-  perspective: 1000px;
-}
-.img img{
-  margin: 9px;
-  border-radius: 5%;
-  border: 2px solid rgb(51, 51, 124);
-  transition: transform 0.3s ease;
-}
-.img img:hover{
-  transform: translateZ(100px);
-  border: 2px solid yellow;
-}
-.Link{
+
+.Link {
   text-decoration: none;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .right,
+  .slider,
+  .slider2
+  .slider3
+
+   {
+    max-width: 100%;
+    margin: 1rem; /* Adjust margins for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchbox input {
+    width: 100%; 
+    max-width: none; 
+    margin: 0.5rem; 
+  }
+
+  .right {
+    width: 100%;
+    justify-content: space-around; 
+  }
+
+  .right div {
+    font-size: 1rem;
+    padding: 0.2rem; 
+  }
+}
+
+.backToHome {
+  background-color: rgb(231, 169, 25);
+    position: absolute;
+    right: 1%; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
+    
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .logoutbtn{
+    background-color: red;
+    border-radius: 7px;
+    margin-right: 30px;
+  }

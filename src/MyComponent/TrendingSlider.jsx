@@ -10,7 +10,7 @@ const TrendingSlider = () => {
     const fetchData = async () => {
       const api = await fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood")
       const data = await api.json();
-      console.log(data.meals);
+      // console.log(data.meals);
       setData(data.meals)
     }
     fetchData();
@@ -29,8 +29,9 @@ const TrendingSlider = () => {
   return (
     <>
     <div style={{
-      margin:"30px",width:"90%",
+      margin:"40px",width:"90%",
       height:"50vh",
+      marginBottom:'0px',
       
       
 
@@ -41,7 +42,7 @@ const TrendingSlider = () => {
           <Link to={`/${d.idMeal}`} key={d.idMeal}>
           <div className='slider2'>
             <img src={d.strMealThumb
-          } alt='' style={{width:"10rem",height:"8rem"}}/>
+          } alt='' style={{width:"10rem",height:"13rem",}}/>
           </div>
           </Link>
         )
@@ -49,10 +50,11 @@ const TrendingSlider = () => {
       }
         </Slider>
      </div>
+     <div className="footer">
      <Footer/>
+     </div>
     </>
   )
 }
 
 export default TrendingSlider
-

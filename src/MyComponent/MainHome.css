@@ -1,17 +1,20 @@
+.main-container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.inner-container{
+  margin: 0;
+  padding: 0;
+  height: 123vh;
+  width: 100%;
+  background-image: url('/public/photo-chefMate.jpg');
+}
 
-.container{
-   margin: 0;
-   padding: 0;
-   position: relative;
-}
-.container img{
-    height: 110.6%;
-    width: 110.6%;
-}
-.container .btn1{
+.btn1 {
     position: absolute;
-    left:66.8em;
-    margin-top:2px ;
+    right: 8%; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
     background-color: #555;
     color: white;
     font-size: 16px;
@@ -19,18 +22,15 @@
     border: none;
     cursor: pointer;
     border-radius: 30px;
-    text-align: center;
-    
   }
-  
-  .container .btn1:hover {
+  .btn1:hover {
     background-color: rgb(242, 236, 236);
     color: black;
   }
-  .container .btn2{
+  .btn2 {
     position: absolute;
-    margin-top:2px ;
-    left:73em;
+    right: 1%; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
     background-color: rgb(38, 33, 33);
     color: white;
     font-size: 16px;
@@ -38,14 +38,41 @@
     border: none;
     cursor: pointer;
     border-radius: 30px;
-    text-align: center;
   }
-  
-  .container .btn2:hover {
+  .btn2:hover {
     background-color: rgb(242, 236, 236);
     color: black;
   }
-  .container #chef-logo{
-    position: absolute;
-    left:0px;
-  }
+  .slider-overlay{
+    
+      position: absolute;
+      bottom: -45%;
+      left: 0%; /* Adjust as needed */
+      width: 99%;
+      
+    }
+    .btn3{
+      position: absolute;
+      right: 28%; /* Adjust as needed */
+      top: 20px; /* Adjust as needed */
+      
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 30px;
+    }
+    .btn4 {
+      position: absolute;
+      right: 18%; /* Adjust as needed */
+      top: 20px; /* Adjust as needed */
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 30px;
+    }
+
+  

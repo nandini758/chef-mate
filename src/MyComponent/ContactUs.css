@@ -1,0 +1,122 @@
+.mainContainers {
+  margin: 0;
+  padding: 0;
+}
+
+.container-contactUs {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.contact-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.buttonContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.backToHome1 {
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.backToHome1:hover {
+  background-color: rgb(242, 236, 236);
+  color: black;
+}
+
+.contactUs-inner-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background:transparent;
+  padding-bottom: 50px;
+  color: white;
+  width: 500px;
+  border-radius: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; 
+  gap:10px;
+  border: 2px solid gray;
+}
+
+.contactUs-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  margin-top: 20px;
+  margin-top: 10px;
+}
+
+.head {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.under-line {
+  width: 100px;
+  height: 4px;
+  background: white;
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact-input {
+  margin-bottom: 20px;
+}
+
+.contactUs-inner-container input[type="text"],
+.contactUs-inner-container input[type="email"],
+.contactUs-inner-container textarea {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contactUs-inner-container input[type="text"]:focus,
+.contactUs-inner-container input[type="email"]:focus,
+.contactUs-inner-container textarea:focus {
+  outline: none;
+  border-color: rgb(231, 169, 25);
+}
+
+.contact-submit {
+  background-color: rgb(204, 144, 0);
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.contact-submit:hover {
+  background-color: rgb(245, 183, 39);
+}

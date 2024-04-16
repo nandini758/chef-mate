@@ -1,0 +1,36 @@
+.aboutUs-container {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container-AboutUs {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .about-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    
+  }
+  .heading{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .about-chefmate{
+    height:50%;
+    width: 50%;
+    position: absolute;
+    top: 28%;
+    left: 40%;
+    color: black;
+    font-size: 20px;
+  }

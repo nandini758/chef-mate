@@ -26,7 +26,8 @@ const Categary = () => {
         gridTemplateColumns:'repeat(auto-fit ,minmax(15rem, 1fr))',
         gridGap:'1rem',
         marginTop:'1rem',
-        overFlowX:'Hidden'
+        overFlowX:'Hidden',
+      
     }}>
     {
         data.map((d)=>{
