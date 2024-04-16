@@ -1,11 +1,12 @@
 .main-container{
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .inner-container{
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 123vh;
   width: 100%;
   background-image: url('/public/photo-chefMate.jpg');
 }
@@ -42,3 +43,36 @@
     background-color: rgb(242, 236, 236);
     color: black;
   }
+  .slider-overlay{
+    
+      position: absolute;
+      bottom: -45%;
+      left: 0%; /* Adjust as needed */
+      width: 99%;
+      
+    }
+    .btn3{
+      position: absolute;
+      right: 28%; /* Adjust as needed */
+      top: 20px; /* Adjust as needed */
+      
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 30px;
+    }
+    .btn4 {
+      position: absolute;
+      right: 18%; /* Adjust as needed */
+      top: 20px; /* Adjust as needed */
+      color: white;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 30px;
+    }
+
+  
