@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-
-import Navbar from './Navbar'
-import TrendingSlider from './TrendingSlider'
 import { useParams } from 'react-router-dom'
+import MainHomeTrending from './MainHomeTrending'
+import { useNavigate } from 'react-router-dom'
 
-const RecipeId = () => {
+const MainHomePageRecipeId = () => {
     // console.log(useParams());
+    const navigate=useNavigate();
     const {idMeal}=useParams()
     const [data, setData] = useState([])
     const [active,setActive]=useState('ingredient')
@@ -15,14 +15,16 @@ const RecipeId = () => {
       const data = await api.json();
       
       setData(data.meals[0])
-      // console.log(data);
+      console.log(data);
     }
     fetchData();
   }, [idMeal])
+  function BackToHome(){
+  navigate('/')
+  }
   return (
     <>
-    <Navbar/>
-    <div style={{width:"90%",margin:"auto",
+    <div style={{width:"90%",marginTop:"10px", marginLeft:'50px',
     textAlign:"center"
     }}>
     <h2>{data.strMeal}</h2>
@@ -35,6 +37,7 @@ const RecipeId = () => {
     <div className='container 'style={{width:'60%'}}> 
     <button className="btn" onClick={()=>setActive('ingredient')}>Ingredient</button>
     <button className="btn"onClick={()=>setActive('instruction')}>Instruction</button>
+    <button className='backToHome' onClick={BackToHome}>BackToHome</button>
    
     {
         active==='ingredient'?(<div>
@@ -54,12 +57,12 @@ const RecipeId = () => {
     
     </div>
     </div>
-    <div style={{marginTop:'0.8rem'}}>
-    <TrendingSlider/>
+    <div style={{marginTop:'0.8rem', marginLeft:'2rem'}}>
+    <MainHomeTrending />
     </div>
     
     </>
   )
 }
 
-export default RecipeId
+export default MainHomePageRecipeId

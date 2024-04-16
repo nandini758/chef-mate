@@ -8,7 +8,7 @@ function Footer() {
     <div className="conatners">
     <footer className="site-footer bg-dark ">
       <hr />
-      <div className="container">
+      <div className="container-footer">
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
             <p className="copyright-text">Copyright &copy; 2017 All Rights Reserved by 

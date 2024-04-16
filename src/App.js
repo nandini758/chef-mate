@@ -9,6 +9,9 @@ import './App.css'
 import SearchElement from './MyComponent/SearchElement'
 import SignUp from './MyComponent/SignUp'
 import Login from './MyComponent/Login'
+import MainHomePageRecipeId from './MyComponent/mainHomePageRecipeId'
+import AboutUs from './MyComponent/AboutUs'
+import ContactUs from './MyComponent/ContactUs'
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
     <Route path='/' Component={MainHome}/>
     <Route path='/SignUp' Component={SignUp}/>
     <Route path='/Login' Component={Login}/>
+    <Route path='/AboutUs' Component={AboutUs}/>
+    <Route path='/ContactUs' Component={ContactUs}/>
+    <Route path='/MainHomePageRecipeId/:idMeal' Component={MainHomePageRecipeId}/>
     <Route path='/Home' Component={Home}/>
     <Route path='/:idMeal' Component={RecipeId}/>
     <Route path='/Categary/:name' Component={Categary}/>

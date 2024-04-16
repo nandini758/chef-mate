@@ -10,7 +10,7 @@ const TrendingSlider = () => {
     const fetchData = async () => {
       const api = await fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood")
       const data = await api.json();
-      console.log(data.meals);
+      // console.log(data.meals);
       setData(data.meals)
     }
     fetchData();
@@ -30,7 +30,6 @@ const TrendingSlider = () => {
     <>
     <div style={{
       margin:"40px",width:"90%",
-      
       height:"50vh",
       marginBottom:'0px',
       
@@ -59,4 +58,3 @@ const TrendingSlider = () => {
 }
 
 export default TrendingSlider
-
